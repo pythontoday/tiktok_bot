@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 
-from config import vk_phone, vk_password
+from tiktok.config import vk_phone, vk_password
 
 
 def tiktok_auth(url):
@@ -15,7 +15,7 @@ def tiktok_auth(url):
     )
     options.set_preference("dom.webdriver.enabled", False)
     driver = webdriver.Firefox(
-        executable_path="firefoxdriver/geckodriver",
+        executable_path="/absolute_path/geckodriver",
         options=options
     )
 
