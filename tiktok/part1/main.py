@@ -72,11 +72,8 @@ def tiktok_auth(url):
         driver.close()
         driver.quit()
 
-
-def main():
-    tiktok_auth("https://www.tiktok.com/")
-    # tiktok_auth("https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html")
-
-
+        
 if __name__ == '__main__':
-    main()
+     tiktok_auth("https://www.tiktok.com/")
+        
+    # tiktok_auth("https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html")
